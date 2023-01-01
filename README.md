@@ -350,7 +350,7 @@ This rule can be referenced as though it were the following:
   the place denoted by the marker token `%output%`. Use the marker token
   `%output|jsstring%` to do JS string escaping on the output. The default
   behavior is to generate code that pollutes the global namespace. Many users
-  will want to set this to `"(function(){%output%}).call(this);"` instead. See
+  will want to set this to `"(function(){ %output% }).call(this);"` instead. See
   the [Closure Compiler FAQ][output-wrapper-faq] for more details.
 
 - **property_renaming_report:** (File; optional) Output file for property
